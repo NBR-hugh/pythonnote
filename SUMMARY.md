@@ -1,5 +1,6 @@
 # Table of content
 
 * [简介](chapter1.md)
+- [LPTHW](LPTHWnote.md)
 - [0w作业教程](0wpy2vspy3.md)
 - [第三方库安装教程](manual_install_pygame.md)
