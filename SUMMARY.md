@@ -14,4 +14,5 @@
 	* [git](Manual/manual_git.md)
 	* [gitbook](Manual/manual_gitbook.md)
 	* [pyenv](Manual/manual_pyenv.md)
+	* [markdown](Manual/manual_markdown.md)
 	* [第三方库安装](Manual/manual_install_pygame.md)
