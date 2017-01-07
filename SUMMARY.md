@@ -4,7 +4,7 @@
 * [榜样力量](othersexp.md)
 * [Python笔记](Exnote/Introduction.md)
 	* [笨办法学Python](Exnote/LPTHWnote.md)
-* [知识块](Modules/Introduction.md)
+* [知识块](Modules/SUMMARY.md)
 	* [Keyword](Modules/pydoc_keyword.md)
 	* [range](Modules/pydoc_range.md)
 * [各周教程](Py103/Introduction.md)
