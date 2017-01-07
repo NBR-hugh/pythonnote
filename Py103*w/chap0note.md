@@ -77,7 +77,7 @@
 
 > 废话不多说了，直接coding来显示其差别！
 
-# Ex01 测试print在python 3.6.0 下的运行
+# Ex01 Ex 31 测试print在python 3.6.0 下的运行
 ## What
 
 - 2.X中的`print`在3.X中为`内建函数`。
@@ -114,16 +114,16 @@
 print(...)
     print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
 ```
+## Why 
 
+[PEP 3105 -- Make print a function](https://www.python.org/dev/peps/pep-3105/)
 
 
 # Ex03 测试/的用法
 
 ### What
 
-在Python 3中，取消了
-
-由上个实验，发现print()在两版本中，都可以使用，在不同版本中，运行如下语句：
+由实验Ex01，print()在两版本中都可用，在不同版本中，运行如下语句：
 
 ```
 print(3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6) #鸡蛋的数目
@@ -143,7 +143,8 @@ print(3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6) #鸡蛋的数目
 
 ### Why
 
-个人猜想：`1 / 4 = 0`的运算结果，有点反人类！而获得小数点还必须在运算的数字中加小数点，对日常计算，增加了不必要的负担。Python若要追求人机交互的效能，应该去掉它。
+个人猜想：  
+`1 / 4 = 0`的运算结果，获得小数点还必须在运算的数字中加小数点，对日常计算，增加了不必要的负担。Python若要追求人机交互的效能，应去掉它。
 
 # Ex05 测试Unicode - 中文变量名
 
@@ -169,6 +170,26 @@ print(3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6) #鸡蛋的数目
  --  Tall, Snarky  [Why Python 3 exists](https://snarky.ca/why-python-3-exists/)
 
 
+# Ex 32 3.X中xrange用range表示，2.X的range功能被xrange()代替
 
+## What
+python 2.X中，range(10)会产生一个列表，  
+而xrange(10)则不是，它是以xrange object的形式存在。  
 
+在python 3.X中，输入下列代码：  
 
+## How
+ 
+```
+>>> for i in xrange(10):
+...     print(i)
+... 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'xrange' is not defined
+```
+可见，xrange被取消。
+
+## Why
+
+[PEP 260 -- Simplify xrange()](https://www.python.org/dev/peps/pep-0260/)
