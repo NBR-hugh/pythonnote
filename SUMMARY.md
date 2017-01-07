@@ -1,9 +1,9 @@
 # Table of content
 
 * [01. 简介](Introduction.md)
-* [02. Python笔记]
+* [02. Python笔记](Exnote/Introduction.md)
 	* [笨办法学Python](Exnote/LPTHWnote.md)
-	* [知识块]
+	* [知识块](Modules/Introduction.md)
 		* [Keyword](Modules/pydoc_keyword.md)
 		* [range](Modules/pydoc_range.md)
 * [03. 榜样力量](othersexp.md)
