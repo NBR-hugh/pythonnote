@@ -427,4 +427,192 @@ A - 有，但该值还是很大的
 Q - 能在函数内调用函数吗？   
 A - 可以
 
+
+# ex 27 逻辑
+
+## 真值项
+
+`True` - 逻辑真  `False` - 逻辑假
+
+## 逻辑运算符
+
+- and - 合取
+- or - 析取
+- not - 否定
+- != - 不等
+- == - 相等
+- \> - 大于
+- \>= - 大于等于
+- < - 小于
+- <= - 小于等于
+
+
+# ex 28 布尔逻辑运算
+
+## 运算方法
+
+1. 比较式用真值代替。
+2. 先运算括号内的式子。
+3. 每一not都获得其后式子相反的真值。
+4. 找到任何还剩余的`and/or`，并解出。
+5. 最终会获得真值。
+
+### 发现：
+```
+>>> not 1
+False
+>>> not None
+True
+>>> not ['a']
+False
+>>> not (1,2)
+False
+>>> not (0,0)
+False
+>>> not []
+True
+>>> not {1:4}
+False
+```
+
+### 解释:
+```
+$ pydoc not 
+```
+
+> In the context of Boolean operations, and also when expressions are
+used by control flow statements, the following values are interpreted
+as false: "False", "None", numeric zero of all types, and empty
+strings and containers (including strings, tuples, lists,
+dictionaries, sets and frozensets).  All other values are interpreted
+as true.
+
+# Ex 29 if
+> 这不就是`执行意图`吗？ 
+> 学习编程还要学习给自己的行为进行编程。  
+- 人与计算机的交互：本次学习的第一层次目的  
+- 人与他人、自己的交互：本次学习的第二层次目的  
+
+```
+$ pydoc
+```
+
+```
+The "if" statement is used for conditional execution:
+   if_stmt ::= "if" expression ":" suite
+               ( "elif" expression ":" suite )*
+               ["else" ":" suite]            
+```
+
+- if_stmt: if语句
+- suite: 指令集
+- ()*: 表示可以有无数句。
+- []:可以有但只有一句。
+
+x += 1 为 x = x + 1  
+x -= 1 为 x = x - 1  
+
+## 出错
+```
+$ python test.py
+  File "test.py", line 5
+    if dogs = 10:
+            ^
+SyntaxError: invalid syntax
+```
+- 出错原因
+
+== 才是进行判断的符号
+
+= 是赋值符号
+
+
+# Ex 30
+
+```
+num = input("输入一个数字")
+```
+
+```
+python ex30.py
+输入一个数字98
+Traceback (most recent call last):
+  File "ex30.py", line 3, in <module>
+    if num >= 20:
+TypeError: '>=' not supported between instances of 'str' and 'int'
+```
+
+# Ex 31
+
+本章内容 if elif 和else
+
+if 满足条件就执行其后的语句
+elif 之前的if或elif的条件没有满足，就判断下一个elif的条件是否满足，
+else 若之前的if和elif（若有）的条件都不满足，且有else，则执行else后的语句。
+
+if语句中嵌套if语句。
+
+
+## 出错
+
+```
+$ python ex31.py
+  File "ex31.py", line 7
+    print（ "There's a giant bear here eating a cheese cake. What do you do?"）
+         ^
+SyntaxError: invalid character in identifier
+```
+
+`print`后需要紧随`(`
+
+```
+$ python ex31.py
+  File "ex31.py", line 7
+    print( "There's a giant bear here eating a cheese cake. What do you do?"）
+                                                                            ^
+SyntaxError: invalid character in identifier
+```
+
+中文括号总是报错，
+解决方法
+在运行前，使用替换。
+
+```
+$ python ex31.py
+  File "ex31.py", line 25
+    print("3. Understanding revolvers yelling melodies.")
+        ^
+SyntaxError: invalid syntax
+```
+
+之前的一个print其后没有`)`
+
+
+### 问题：若input()向int() 里馈入了字符串，出现报错，怎么让他重新输入？
+
+先判断input了什么类型的输入。
+如果是int，则继续，否则令其重新输入。
+if type()
+
+```
+try:
+   val = int(userInput)
+except ValueError:
+   print("That's not an int!")
+```
+
+```
+>>> try print("a")
+  File "<stdin>", line 1
+    try print("a")
+            ^
+SyntaxError: invalid syntax
+```
+
+
+# Ex 32
+
+本章内容 列表和for
+
+
 	

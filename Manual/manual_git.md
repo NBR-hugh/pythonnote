@@ -61,9 +61,102 @@ $ man git-<help>
 $ git help config
 ```
 ## 2. 基本使用
+### 2.1 克隆
+> 若是本地新建文件夹，用`git init`命令。
+
+克隆在线仓库
+
+	git clone https://github.com/VyGiBe/test
+	git clone https://github.com/VyGiBe/test anyname
+
+第二行是给新建库自命名
+
+### 2.2 查看当前文件状态
+
+	$ git status
+	On branch master
+	Your branch is up-to-date with 'origin/master'.
+	nothing to commit, working tree clean
+
+简短显示
+
+```
+git status -s
+```
 
 
-#### 从新文件夹
+### 2.3 跟踪新文件
+
+新建一文件，查看其状态，其为untracked file状态。
+
+```	
+$ touch test.md
+$ git status 
+	On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	test.md
+
+nothing added to commit but untracked files present (use "git add" to track)	
+```
+跟踪指定文件：
+
+```
+git add test.md
+```
+
+跟踪所有未跟踪文件，用`.`代替之上的文件名称：
+
+```
+git add .
+```
+再次查看结果，可见其已被跟踪：
+
+```
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   test.md
+
+```
+### 忽略某些文件
+
+- 在使用`git add .`时，可能会跟踪类似`.python_version`、`.DS_Store`等文件，当它们并没有用时，需要将其忽略。  
+- 可以在根目录新建一个`.gitignore`文件，并在Terminal中打开，输入需要忽略的规则，具体可见[Pro Git官方文档](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)。
+
+### 比较差异
+
+查看修改之后还没有暂存起来的变化内容：
+
+```
+git diff
+```
+查看已经暂存起来的文件和上次提交时的快照之间的差异：
+
+```
+git diff --cached
+```
+
+
+### 提交更新
+
+确定提交更新，使用`commit`命令。
+
+```
+$ git commit
+```
+并使用TextWrangler编辑commit。
+
+推荐可以用`git commit -a -m "<commmit>"`完成`add`和`commit`，以跳过使用暂存区域。
+
+
+
+
 
 
 ## 进阶使用
