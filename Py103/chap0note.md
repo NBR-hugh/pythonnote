@@ -1,12 +1,26 @@
 # 0w个人教程
 
+#### 目录
+
+- 本章任务
+- 计划
+- 入门参考
+- 选择参考
+- 差异比较
+	- 各版本发布信息
+	- 版本使用建议
+	- Ex01 Ex 31 测试print
+	- Ex03 测试/的用法
+	- Ex05 测试Unicode - 中文变量名
+	- Ex32 range用法
+
 ## 本章任务：探索Python3.X与Python2.X的不同
 
 - 在LPTHW中选3-7个练习，用Python3.X改写之
 - 将发现的不同之处记录到个人教程中，告诉六个月前的自己
 
 
-# 怎么设想的？
+## 计划
 
 1. 差异的分类
 	2. 整体的差别
@@ -72,17 +86,17 @@
 
 > 其中，Python 2.7.X 的支持将持续到[2020](https://hg.python.org/peps/rev/76d43e52d978)年。
 
-## 版本使用建议
+### 版本使用建议
 - [Should I use Python 2 or 3?](https://wiki.python.org/moin/Python2orPython3)
 
 > 废话不多说了，直接coding来显示其差别！
 
-# Ex01 Ex 31 测试print在python 3.6.0 下的运行
-## What
+## Ex01 Ex 31 测试print在python 3.6.0 下的运行
+### What
 
 - 2.X中的`print`在3.X中为`内建函数`。
 
-## How
+### How
 
 2.7.10下
 
@@ -97,7 +111,7 @@
 'string'
 ```
 
-### 发现
+#### 发现
 在python 2.7.10下, `print()`也能被运行。
 
 在python 2.7.10下，`pydoc print`，有如下信息:
@@ -114,14 +128,14 @@
 print(...)
     print(value, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
 ```
-## Why 
+### Why 
 
 [PEP 3105 -- Make print a function](https://www.python.org/dev/peps/pep-3105/)
 
 
-# Ex03 测试/的用法
+## Ex03 测试/的用法
 
-### What
+#### What
 
 由实验Ex01，print()在两版本中都可用，在不同版本中，运行如下语句：
 
@@ -141,18 +155,18 @@ print(3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6) #鸡蛋的数目
 6.25
 ```
 
-### Why
+#### Why
 
 个人猜想：  
 `1 / 4 = 0`的运算结果，获得小数点还必须在运算的数字中加小数点，对日常计算，增加了不必要的负担。Python若要追求人机交互的效能，应去掉它。
 
-# Ex05 测试Unicode - 中文变量名
+## Ex05 测试Unicode - 中文变量名
 
-### What-何为Unicode？
+#### What-何为Unicode？
 
 - Unicode（中文：万国码、国际码、统一码、单一码）是电脑科学领域里的一项业界标准。它对世界上大部分的文字系统进行了整理、编码，使得电脑可以用更为简单的方式来呈现和处理文字。 Unicode涵盖的资料除了视觉上的字形、编码方法、标准的字符编码外，还包含了字符特性，如大小写字母。- [Wikipedia](https://zh.wikipedia.org/zh-hans/Unicode)
 
-### How
+#### How
 
 1. 若在.py文件中输出中文，不需要`# -*- coding: utf-8 -*-`这一行了。 
 2. Unicode标准的文字可以用作变量名，如下所示：
@@ -164,21 +178,21 @@ print(3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6) #鸡蛋的数目
 ```
 
 
-### Why-为何使用Unicode?
+#### Why-为何使用Unicode?
 
 > Supporting Unicode and text from any written language is important. Python is a language for the world, not just for those languages that support the Roman alphabet that ASCII covers.   
  --  Tall, Snarky  [Why Python 3 exists](https://snarky.ca/why-python-3-exists/)
 
 
-# Ex 32 3.X中xrange用range表示，2.X的range功能被xrange()代替
+## Ex 32 3.X中xrange用range表示，2.X的range功能被xrange()代替
 
-## What
+### What
 python 2.X中，range(10)会产生一个列表，  
 而xrange(10)则不是，它是以xrange object的形式存在。  
 
 在python 3.X中，输入下列代码：  
 
-## How
+### How
  
 ```
 >>> for i in xrange(10):
@@ -190,6 +204,6 @@ NameError: name 'xrange' is not defined
 ```
 可见，xrange被取消。
 
-## Why
+### Why
 
 [PEP 260 -- Simplify xrange()](https://www.python.org/dev/peps/pep-0260/)
