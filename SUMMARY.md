@@ -9,6 +9,7 @@
 	* [range](Modules/pydoc_range.md)
 * [各周教程](Py103/Introduction.md)
 	* [Chap0作业教程](Py103/chap0note.md)
+	* [Chap1作业教程](Py103/chap1note.md)
 * [教程](Manual/Introduction.md)
 	* [Terminal](Manual/manual_terminal.md)
 	* [git](Manual/manual_git.md)

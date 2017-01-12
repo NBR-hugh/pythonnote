@@ -1,5 +1,15 @@
 背景
 安装
+
+```
+$  pip install requests
+Collecting requests
+  Downloading requests-2.12.4-py2.py3-none-any.whl (576kB)
+    100% |████████████████████████████████| 583kB 27kB/s 
+Installing collected packages: requests
+Successfully installed requests-2.12.4
+```
+
 配置
 使用
 体验
@@ -26,7 +36,7 @@ Teach it
 kvdb
 ~~nose~~
 qpy
-~~requests~~
+requests
 restful
 sea
 sqlite
