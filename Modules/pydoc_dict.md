@@ -17,7 +17,7 @@
 字典化|dict(obj)|长度|len(d)
 检索key的value|d[key]|删除特定{key:value}|del d[key]
 判断key是否在d中|key in d|判断key是否在d中|key not in d 或 not key in d
-删除全部内容|d.clear()|获得d的简单拷贝|d.copy()
+删除全部内容|d.clear()|获得d的浅复制|d.copy()
 |||
 
 
