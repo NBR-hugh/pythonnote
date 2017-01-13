@@ -2,16 +2,20 @@
 
 [官方文档网址](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
 
-功能|函数|功能|函数
------|----|----|----
-字典化|dict(obj)|长度|len(d)
-检索key的value|d[key]|删除特定{key:value}|del d[key]
-判断key是否在d中|key in d|判断key是否在d中|key not in d 或 not key in d
-删除全部内容|d.clear()|获得d的浅复制|d.copy()
-|||
+| 功能 | 函数 | 功能 | 函数 |
+| --- | --- | --- | --- |
+| 字典化 | dict(obj) | 长度 | len(d) |
+| 检索key的value | d[key] | 删除特定{key:value} | del d[key] |
+| 判断key是否在d中 | key in d | 判断key是否在d中 | key not in d 或 not key in d |
+| 删除全部内容 | d.clear() | 获得d的浅复制 | d.copy() |
+|  | fromkeys(seq[, value]) |  | get(key[, default]) |
+|  | items() |  | keys() |
+|  | values() |  | pop() |
+|  | popitem() |  | setdefault(key[,default = None]) |
+|  | update() |  | **dic[key] = value** |
 
 
-在词典中，不建议用浮点数，因为它是近似数。
+> 在词典中，不建议用浮点数，因为它是近似数。
 
 形式{key: value}
 
@@ -20,11 +24,9 @@ class dict(**kwarg)
 class dict(mapping, **kwarg)
 class dict(iterable, **kwarg)
 ```
-上面三句是什么意思？
-
-class又是什么意思？
-
-**呢？
+上面三句是什么意思？  
+class又是什么意思？  
+**呢？  
 
 
 key必须是唯一的吗？是的。
@@ -142,8 +144,13 @@ dict_keys(['two', 'one', 'three'])
 
 values()
 
+```
+>>> dic
+{'one': 5, 'two': 2}
 
-
+>>> dic.values()
+dict_values([5, 2])
+```
 
 pop()
 
@@ -180,6 +187,13 @@ setdefault(key[,default = None])
 update()
 
 ```
-
+>>> dic
+{'one': 1}
+>>> dic.update({"two": 2})
+>>> dic
+{'one': 1, 'two': 2}
+>>> dic.update({'one': 5})
+>>>dic
+{'one': 5, 'two': 2}
 ```
 
