@@ -8,7 +8,7 @@
 	* [Keyword](Modules/pydoc_keyword.md)
 	* [range](Modules/pydoc_range.md)
 	* [dict](Modules/pydoc_dict.md)
-	* [list](Modules/pydoc_list.md)	
+	* [list](Modules/pydoc_list.md)
 	* [def](Modules/pydoc_def.md)
 * [各周教程](Py103/Introduction.md)
 	* [Chap0作业教程](Py103/chap0note.md)
@@ -16,6 +16,9 @@
 * [教程](Manual/Introduction.md)
 	* [Terminal](Manual/manual_terminal.md)
 	* [git](Manual/manual_git.md)
+	* [第三方库安装](Manual/manual_install_pygame.md)
+
+```
 	* [gitbook](Manual/manual_gitbook.md)
 	* [pyenv](Manual/manual_pyenv.md)
 	* [markdown](Manual/manual_markdown.md)
@@ -24,4 +27,6 @@
 	* [bottle](Manual/manual_bottle.md)
 	* [requests](Manual/manual_requests.md)
 	* [Chrome Developer Tools](Manual/manual_Chrome_devtool.md)
-	* [第三方库安装](Manual/manual_install_pygame.md)
+```
+
+

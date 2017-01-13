@@ -2,16 +2,6 @@
 
 [官方文档网址](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
 
-
-描述
-语法
-参数
-返回值
-实例
-
-
-
-
 功能|函数|功能|函数
 -----|----|----|----
 字典化|dict(obj)|长度|len(d)
@@ -192,3 +182,4 @@ update()
 ```
 
 ```
+
