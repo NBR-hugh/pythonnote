@@ -10,6 +10,7 @@
 	* [dict](03Modules/pydoc_dict.md)
 	* [list](03Modules/pydoc_list.md)
 	* [def](03Modules/pydoc_def.md)
+	* [file](03Modules/pydoc_read_and_write_file.md)
 * [任务教程](04Py103/Introduction.md)
 	* [Chap0作业教程](04Py103/chap0note.md)
 	* [Chap1作业教程](04Py103/chap1note.md)

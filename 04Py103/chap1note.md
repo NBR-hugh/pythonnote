@@ -1,26 +1,33 @@
 # 1w个人教程
   
   
-## [目录](id:anchor0) 
-* [核查清单](anchor1)
+## <a name = "目录"></a> 目录
+* [核查清单](#anchor1)
 	* [勿犯错误](#anchor2)
 	* [编程建议](#anchor3)
 * [本章任务](#anchor4)
-* [计划](#anchor5)
-* [尝试过程]()
-* [反思](#anchor7)
-* [问题](#anchor8)
-* [参考](#anchor6)
+* [任务计划](#anchor5)
+* [尝试过程](#anchor6)
+* [反思改进](#anchor7)
+* [问题提出](#anchor8)
+* [参考来源](#anchor9)
 
-## [核查清单](id:anchor1) 
 
-### [勿犯错误](id:anchor2)
+
+
+
+## <a name = "anchor1"></a> 核查清单
+
+
+### <a name = "anchor2"></a> 勿犯错误
+
 
 >- 错误0：花了太多时间学习那些不是特别重要的东西上。
 	- 启示：专注于任务和与任务有关的内容，时刻问自己：这和当前的任务有关联吗？
 - 错误1：没有立即开始写代码
 
-### [编程建议](id:anchor3)
+### <a name = "anchor3"></a> 编程建议
+
 
 #### 制作原型知识方法
 
@@ -35,11 +42,12 @@
 3. 使用执行意图而非目标意图
 4. 成为一名认知学徒，教别人执行
 
-[返回目录](#anchor0)
+[返回目录](#目录)
 
 
 
-## [本章任务](id:anchor4)
+## <a name = "anchor4"></a> 本章任务
+
 
 ### 完成一天气查询程序
 > 1. 任务要求
@@ -84,7 +92,7 @@ $
 #### 4. 任务资源
 > - [weather_info.txt](https://github.com/AIMinder/Py103/tree/master/Chap1/project)
 
-[返回目录](#anchor0)
+[返回目录](#目录)
 
 
 
@@ -92,7 +100,7 @@ $
 
 
 
-## [计划](id:anchor5) The Program of Programming
+## <a name = "anchor5"></a> 任务计划
 
 > （之后添加的内容符号为++）
 
@@ -115,7 +123,7 @@ $
 >请给出多种方案！或在完成MVP后再探索。
 
 1. .txt -> list -> dict
-	1. file相关的[Reading、Writing命令](#readandwrite)。
+	1. file相关的[Reading、Writing命令](#anchor10)。
 	2. 如何读取行?
 		1. readlines
 		2. readline
@@ -182,13 +190,20 @@ $
 
 #### 同伴资源
 * 观察记录  
-[返回目录](#anchor0)
 
-## 尝试过程
+[返回目录](#目录)
 
-> 还在整理中......
+## <a name = "anchor6"></a> 尝试过程
 
-## [反思](id:anchor7)
+[Reading and Writing Files]()
+[dict使用](https://vygibe.gitbooks.io/pyhthonnote/content/03Modules/pydoc_dict.html)
+
+ 
+ 
+[返回目录](#目录)
+
+## <a name = "anchor7"></a> 反思改进
+
 
 如果我重新做这个任务，我会如何做？
 
@@ -225,14 +240,19 @@ $
 	6. 交互友好版。
 	6. 运算最少版。
 	7. 内存使用最少版。
+[返回目录](#目录)
 
-## [问题](id:anchor8)
+
+## <a name = "anchor8"></a> 问题提出
+
 
 1. 大妈或者教练们会用什么基本方法完成这个程序？如果他们写出了一个，我和他们有什么区别？我能从中学到什么?
 2. 其他学员在事先不同功能时，都用了什么方式？我能学到什么，我如何在这次的修改完善中运用起来？
 
-## [参考资料](id:anchor6)
-> - 读取天气数据：Python 读写文件参考[](id:readandwrite) [Reading and Writing Files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
+## <a name = "anchor9"></a> 参考来源
+
+> - 读取天气数据：Python 读写文件参考<a name = "anchor10"></a>
+[Reading and Writing Files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
 - 把天气数据转换为字典 
 	- [Mapping Types — dict](https://docs.python.org/3.5/library/stdtypes.html#typesmapping)
  	- [Data Structures](https://docs.python.org/3.5/tutorial/datastructures.html#data-structures)
@@ -244,5 +264,5 @@ $
 - [The 2 Biggest Mistakes I Made When Learning to Code](http://www.suneelius.com/2012/09/07/the-2-biggest-mistakes-i-made-when-learning-to-code/)[(译文)](http://www.vaikan.com/the-2-biggest-mistakes-i-made-when-learning-to-code/)
 - [How I Taught Myself to Code in 8 Weeks](http://tech.yipit.com/2012/08/21/how-i-taught-myself-to-code-in-8-weeks/)
 
-[返回目录](#anchor0)
+[返回目录](#目录)
 
