@@ -2,31 +2,31 @@
   
   
 ## <a name = "目录"></a> 目录
-* [核查清单](#anchor1)
-	* [勿犯错误](#anchor2)
-	* [编程建议](#anchor3)
-* [本章任务](#anchor4)
-* [任务计划](#anchor5)
-* [尝试过程](#anchor6)
-* [反思改进](#anchor7)
-* [问题提出](#anchor8)
-* [参考来源](#anchor9)
+* [核查清单](#核查清单)
+	* [勿犯错误](#勿犯错误)
+	* [编程建议](#编程建议)
+* [本章任务](#本章任务)
+* [任务计划](#任务计划)
+* [尝试过程](#尝试过程)
+* [反思改进](#反思改进)
+* [问题提出](#问题提出)
+* [参考来源](#参考来源)
 
 
 
 
 
-## <a name = "anchor1"></a> 核查清单
+## <a name = "核查清单"></a> 核查清单
 
 
-### <a name = "anchor2"></a> 勿犯错误
+### <a name = "勿犯错误"></a> 勿犯错误
 
 
 >- 错误0：花了太多时间学习那些不是特别重要的东西上。
 	- 启示：专注于任务和与任务有关的内容，时刻问自己：这和当前的任务有关联吗？
 - 错误1：没有立即开始写代码
 
-### <a name = "anchor3"></a> 编程建议
+### <a name = "编程建议"></a> 编程建议
 
 
 #### 制作原型知识方法
@@ -46,7 +46,7 @@
 
 
 
-## <a name = "anchor4"></a> 本章任务
+## <a name = "本章任务"></a> 本章任务
 
 
 ### 完成一天气查询程序
@@ -100,13 +100,13 @@ $
 
 
 
-## <a name = "anchor5"></a> 任务计划
+## <a name = "任务计划"></a> 任务计划
 
 > （之后添加的内容符号为++）
 
 ### 明确任务
 
-- 记录[任务](#anchor4)，并做整理。
+- 记录[任务](#本章任务)，并做整理。
 
 ### 分析任务
 
@@ -123,7 +123,7 @@ $
 >请给出多种方案！或在完成MVP后再探索。
 
 1. .txt -> list -> dict
-	1. file相关的[Reading、Writing命令](#anchor10)。
+	1. file相关的[Reading、Writing命令](#读写文件)。
 	2. 如何读取行?
 		1. readlines
 		2. readline
@@ -193,7 +193,7 @@ $
 
 [返回目录](#目录)
 
-## <a name = "anchor6"></a> 尝试过程
+## <a name = "尝试过程"></a> 尝试过程
 
 [Reading and Writing Files]()
 [dict使用](https://vygibe.gitbooks.io/pyhthonnote/content/03Modules/pydoc_dict.html)
@@ -202,7 +202,7 @@ $
  
 [返回目录](#目录)
 
-## <a name = "anchor7"></a> 反思改进
+## <a name = "反思改进"></a> 反思改进
 
 
 如果我重新做这个任务，我会如何做？
@@ -244,15 +244,15 @@ $
 [返回目录](#目录)
 
 
-## <a name = "anchor8"></a> 问题提出
+## <a name = "问题提出"></a> 问题提出
 
 
 1. 大妈或者教练们会用什么基本方法完成这个程序？如果他们写出了一个，我和他们有什么区别？我能从中学到什么?
 2. 其他学员在事先不同功能时，都用了什么方式？我能学到什么，我如何在这次的修改完善中运用起来？
 
-## <a name = "anchor9"></a> 参考来源
+## <a name = "参考来源"></a> 参考来源
 
-> - 读取天气数据：Python 读写文件参考<a name = "anchor10"></a>
+> - 读取天气数据：Python 读写文件参考<a name = "读写文件"></a>
 [Reading and Writing Files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
 - 把天气数据转换为字典 
 	- [Mapping Types — dict](https://docs.python.org/3.5/library/stdtypes.html#typesmapping)
