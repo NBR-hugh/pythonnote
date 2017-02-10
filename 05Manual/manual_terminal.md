@@ -1,1 +1,0 @@
-[An A-Z Index of the Apple OS X command line](http://ss64.com/osx/)
