@@ -1,4 +1,10 @@
 # Table of content
+        
+* [任务教程](04Py103/Introduction.md)
+	* [Chap0作业教程](04Py103/chap0note.md)
+	* [Chap1作业教程](04Py103/chap1note.md)
+	* [Chap4作业教程](04Py103/chap4note.md)
+
 
         <!--* [简介](Introduction.md)
         * [核查清单](01checklist.md)
@@ -13,11 +19,6 @@
         	* [def](03Modules/pydoc_def.md)
         	* [file](03Modules/pydoc_read_and_write_file.md)
         -->
-        
-* [任务教程](04Py103/Introduction.md)
-	* [Chap0作业教程](04Py103/chap0note.md)
-	* [Chap1作业教程](04Py103/chap1note.md)
-	* [Chap4作业教程](04Py103/chap4note.md)
 
 
             
