@@ -3,4 +3,6 @@
 * [各周任务教程](Introduction.md)
     * [Chap0](Chap0.md)
     * [Chap1](chap1.md)
+    * [Chap4](chap4.md)
+
 
